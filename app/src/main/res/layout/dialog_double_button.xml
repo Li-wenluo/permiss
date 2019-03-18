@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示消失"
+            android:textColor="#4D4D4D"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/content_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="10dp"
+            android:text="提示内容"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginRight="8dp"
+            android:background="#00FFFFFF"
+            android:minWidth="76dp"
+            android:text="取消"
+            android:textColor="#444444"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="#00FFFFFF"
+            android:minWidth="76dp"
+            android:text="立即设置"
+            android:textColor="#1C96E1"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

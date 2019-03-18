@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/room_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="会议室号：" />
+
+            <EditText
+                android:id="@+id/et_roomid"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入会议室号"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="昵称：" />
+
+            <EditText
+                android:id="@+id/et_nickname"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入昵称" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="会议密码：" />
+
+            <EditText
+                android:id="@+id/et_room_password"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="如果有会议室密码，请输入" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="服务器地址：" />
+
+            <EditText
+                android:id="@+id/et_server_address"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="如果为私有云，请输入私有云地址" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="端口号：" />
+
+            <EditText
+                android:id="@+id/et_server_port"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="如果为私有云，请输入端口号"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/check_border"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/bt_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/check_border"
+            android:text="切换账号登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="账号：" />
+
+            <EditText
+                android:id="@+id/et_user_account"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="密码：" />
+
+            <EditText
+                android:id="@+id/et_user_password"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="服务器地址：" />
+
+            <EditText
+                android:id="@+id/et_user_server_address"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="如果为私有云，请输入私有云地址" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="端口号：" />
+
+            <EditText
+                android:id="@+id/et_user_server_port"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="如果为私有云，请输入端口号"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/check_border"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/bt_change_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/check_border"
+            android:text="切换账号登录" />
+    </LinearLayout>
+</LinearLayout>
